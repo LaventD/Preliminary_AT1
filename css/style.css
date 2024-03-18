@@ -1,43 +1,86 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+header {
+  background-color: #FFBDE1;
+  padding: 20px 0;
+  font-family: 'KG Sweet N Sassy Regular', cursive; /* Set font */
+  
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black; /* Updated text color */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+footer {
+  background-color: #FFBDE1;
+  color: black;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left p {
+  margin-right: 10px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+.footer-right a {
+  margin-left: 10px;
+  color: black;
+}
+
+.footer-right a:hover {
+  color: #f39c12;
+}
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  background-image: url('../images/bgpattern.png');
+  background-repeat: repeat; /* Ensure the background image repeats */
+  background-size: 150px; /* Set the background size */
+  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to the body */
   }
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  #quizContainer {
-    display: none;
-  }
-  
+}
+
+font-face {
+  font-family: 'KGSweetNSassy'; /* Name of the font */
+  src: url('fonts/KGSweetNSassy.ttf') format('truetype'); /* Path to the font file */
+}
+/* Apply the custom font to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to headings */
+}
+

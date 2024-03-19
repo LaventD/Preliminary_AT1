@@ -66,12 +66,3 @@
   </script>
 </body>
 </html>
-
-@font-face {
-  font-family: 'KGSweetNSassy'; /* Name of the font */
-  src: url('fonts/KGSweetNSassy.ttf') format('truetype'); /* Path to the font file */
-}
-
-body {
-  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to the body */
-}

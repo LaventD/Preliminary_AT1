@@ -64,6 +64,7 @@ footer {
   color: black;
 }
 
+
 .footer-right a:hover {
   color: #f39c12;
 }
@@ -83,4 +84,37 @@ font-face {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to headings */
 }
+.character {
+  text-align: center; /* Center the content horizontally */
+  margin: 10px auto; /* Center the container horizontally and add spacing */
+}
 
+.character img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.character img:hover {
+  transform: scale(1.1);
+}
+
+.caption {
+  text-align: center; /* Center the caption text */
+  margin-top: 5px; /* Add some space between the image and the caption */
+}
+/* Apply styles only to elements on the characters webpage */
+.characters-page .container {
+  text-align: center;
+}
+
+.characters-page .character {
+  display: inline-block;
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.characters-page .caption {
+  text-align: center;
+  margin-top: 5px; /* Add some space between the image and the caption */
+}

@@ -4,7 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Doki Doki Literature Club</title>
+  <title>Doki Doki Literature Club - Characters</title>
+  <style>
+    .character {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+    }
+    .character img {
+      width: 200px; /* Set a fixed width */
+      height: auto; /* Automatically adjust height to maintain aspect ratio */
+      transition: transform 0.3s ease-in-out;
+    }
+    .character img:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,7 +41,28 @@
 
   <main>
     <div class="container">
-      <!-- Content for the respective page goes here -->
+      <h2 class="center">Hey There!!!</h2>
+      
+      <div class="character">
+        <a href="sayori.html"><img src="images/character4.png" alt="Sayori"></a>
+        <p class="caption">Sayori</p>
+      </div>
+  
+      <div class="character">
+        <a href="yuri.html"><img src="images/character3.png" alt="Yuri"></a>
+        <p class="caption">Yuri</p>
+      </div>
+  
+      <div class="character">
+        <a href="natsuki.html"><img src="images/character2.png" alt="Natsuki"></a>
+        <p class="caption">Natsuki</p>
+      </div>
+  
+      <div class="character">
+        <a href="monika.html"><img src="images/character1.png" alt="Monika"></a>
+        <p class="caption">Monika</p>
+      </div>
+  
     </div>
   </main>
 
@@ -41,5 +77,8 @@
       </div>
     </div>
   </footer>
+  <body class="characters-page">
+    <!-- Your HTML content for the characters webpage -->
+  </body>
 </body>
 </html>

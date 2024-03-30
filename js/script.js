@@ -1,62 +1,38 @@
-// Sample quiz questions and answers
-const questions = [
-    {
-      question: "Who is the protagonist of DDLC?",
-      options: ["Monika", "Sayori", "Yuri", "MC"],
-      correctAnswer: "MC"
-    },
-    // Add more questions here...
-  ];
-  
-  let currentQuestion = 0;
-  let score = 0;
-  
-  document.getElementById("startQuiz").addEventListener("click", startQuiz);
-  
-  function startQuiz() {
-    currentQuestion = 0;
-    score = 0;
-    displayQuestion();
-    document.getElementById("startQuiz").style.display = "none";
-    document.getElementById("quizContainer").style.display = "block";
+document.getElementById('submitQuiz').addEventListener('click', function() {
+  var correctAnswers = 0;
+
+  // Check Question 1
+  var selectedAnswer1 = document.querySelector('input[name="question1"]:checked');
+  if (selectedAnswer1 && selectedAnswer1.value === 'd') {
+      correctAnswers++;
   }
-  
-  function displayQuestion() {
-    const quizContainer = document.getElementById("quizContainer");
-    const question = questions[currentQuestion];
-  
-    let optionsHTML = "";
-    for (let i = 0; i < question.options.length; i++) {
-      optionsHTML += `<input type="radio" name="answer" value="${question.options[i]}">${question.options[i]}<br>`;
-    }
-  
-    quizContainer.innerHTML = `<h3>${question.question}</h3>${optionsHTML}`;
+
+  // Check Question 2
+  var selectedAnswer2 = document.querySelector('input[name="question2"]:checked');
+  if (selectedAnswer2 && selectedAnswer2.value === 'a') {
+      correctAnswers++;
   }
-  
-  document.getElementById("submitQuiz").addEventListener("click", submitQuiz);
-  
-  function submitQuiz() {
-    const selectedOption = document.querySelector("input[name='answer']:checked");
-  
-    if (selectedOption) {
-      if (selectedOption.value === questions[currentQuestion].correctAnswer) {
-        score++;
-      }
-  
-      currentQuestion++;
-  
-      if (currentQuestion < questions.length) {
-        displayQuestion();
-      } else {
-        showResult();
-      }
-    } else {
-      alert("Please select an option before submitting.");
-    }
+
+  // Repeat for Questions 3 to 6
+  // Check Question 3
+  var selectedAnswer3 = document.querySelector('input[name="question3"]:checked');
+  if (selectedAnswer3 && selectedAnswer3.value === 'a') {
+      correctAnswers++;
   }
-  
-  function showResult() {
-    const resultContainer = document.getElementById("result");
-    resultContainer.innerHTML = `<p>Your score: ${score} out of ${questions.length}</p>`;
+
+  // Check Question 4
+  var selectedAnswer4 = document.querySelector('input[name="question4"]:checked');
+  if (selectedAnswer4 && selectedAnswer4.value === 'c') {
+      correctAnswers++;
   }
-  
+
+  // Check Question 5
+  var selectedAnswer5 = document.querySelector('input[name="question5"]:checked');
+  if (selectedAnswer5 && selectedAnswer5.value === 'c') {
+      correctAnswers++;
+  }
+
+  // Display the result
+  var resultContainer = document.getElementById('result');
+  resultContainer.innerText = 'You got ' + correctAnswers + ' out of 5 questions correct!';
+});

@@ -1,43 +1,179 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+header {
+  background-color: #FFBDE1;
+  padding: 20px 0;
+  font-family: 'KG Sweet N Sassy Regular', cursive; /* Set font */
+  
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: black; /* Updated text color */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+footer {
+  background-color: #FFBDE1;
+  color: black;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left p {
+  margin-right: 10px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+.footer-right a {
+  margin-left: 10px;
+  color: black;
+}
+
+
+.footer-right a:hover {
+  color: #f39c12;
+}
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+  background-image: url('../images/bgpattern.png');
+  background-repeat: repeat; /* Ensure the background image repeats */
+  background-size: 150px; /* Set the background size */
+  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to the body */
   }
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #555;
-  }
-  
-  #quizContainer {
-    display: none;
-  }
-  
+}
+
+font-face {
+  font-family: 'KGSweetNSassy'; /* Name of the font */
+  src: url('fonts/KGSweetNSassy.ttf') format('truetype'); /* Path to the font file */
+}
+/* Apply the custom font to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to headings */
+}
+.character {
+  text-align: center; /* Center the content horizontally */
+  margin: 10px auto; /* Center the container horizontally and add spacing */
+}
+
+.character img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.character img:hover {
+  transform: scale(1.1);
+}
+
+.caption {
+  text-align: center; /* Center the caption text */
+  margin-top: 5px; /* Add some space between the image and the caption */
+}
+/* Apply styles only to elements on the characters webpage */
+.characters-page .container {
+  text-align: center;
+}
+
+.characters-page .character {
+  display: inline-block;
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.characters-page .caption {
+  text-align: center;
+  margin-top: 5px; /* Add some space between the image and the caption */
+}
+.character {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top; /* Align images to the top of the container */
+}
+
+/* Add this CSS to adjust the layout */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFBDE1;
+  color: black;
+  padding: 20px;
+}
+
+main {
+  margin-bottom: 80px; /* Adjust as needed to ensure space for the footer */
+}
+
+/* General text size */
+body {
+  font-size: 16px; /* Default font size */
+}
+
+/* Specific text size for the quiz page */
+.quiz-text {
+  font-size: 14px; /* Smaller font size for quiz content */
+}
+
+/* CSS */
+#submitQuiz {
+  background-color: #ee60c5; /* Green background */
+  border: none;
+  color: white; /* White text color */
+  padding: 7px 14px; /* Padding around the text */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  font-family: 'KGSweetNSassy', sans-serif; /* Use Lato-Regular font */
+}
+
+#submitQuiz:hover {
+  background-color: #ff00d4; /* Darker green color on hover */
+}

@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
   }
+<<<<<<< Updated upstream
   
   header {
     background-color: #333;
@@ -41,3 +42,121 @@ body {
     display: none;
   }
   
+=======
+}
+
+font-face {
+  font-family: 'KGSweetNSassy'; /* Name of the font */
+  src: url('fonts/KGSweetNSassy.ttf') format('truetype'); /* Path to the font file */
+}
+/* Apply the custom font to headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to headings */
+}
+.character {
+  text-align: center; /* Center the content horizontally */
+  margin: 10px auto; /* Center the container horizontally and add spacing */
+}
+
+.character img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.character img:hover {
+  transform: scale(1.1);
+}
+
+.caption {
+  text-align: center; /* Center the caption text */
+  margin-top: 5px; /* Add some space between the image and the caption */
+}
+/* Apply styles only to elements on the characters webpage */
+.characters-page .container {
+  text-align: center;
+}
+
+.characters-page .character {
+  display: inline-block;
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.characters-page .caption {
+  text-align: center;
+  margin-top: 5px; /* Add some space between the image and the caption */
+}
+.character {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top; /* Align images to the top of the container */
+}
+
+/* Add this CSS to adjust the layout */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFBDE1;
+  color: black;
+  padding: 20px;
+}
+
+main {
+  margin-bottom: 80px; /* Adjust as needed to ensure space for the footer */
+}
+
+/* General text size */
+body {
+  font-size: 16px; /* Default font size */
+}
+
+/* Specific text size for the quiz page */
+.quiz-text {
+  font-size: 14px; /* Smaller font size for quiz content */
+}
+.back-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ff7fec; /* Green background color */
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ff00f7; /* Darker green on hover */
+}
+
+/* CSS */
+#submitQuiz {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white; /* White text color */
+  padding: 7px 14px; /* Padding around the text */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  font-family: 'KGSweetNSassy', sans-serif; /* Use Lato-Regular font */
+}
+
+#submitQuiz:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+>>>>>>> Stashed changes

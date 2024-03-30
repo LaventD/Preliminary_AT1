@@ -157,3 +157,23 @@ body {
 .quiz-text {
   font-size: 14px; /* Smaller font size for quiz content */
 }
+
+/* CSS */
+#submitQuiz {
+  background-color: #ee60c5; /* Green background */
+  border: none;
+  color: white; /* White text color */
+  padding: 7px 14px; /* Padding around the text */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  font-family: 'KGSweetNSassy', sans-serif; /* Use Lato-Regular font */
+}
+
+#submitQuiz:hover {
+  background-color: #ff00d4; /* Darker green color on hover */
+}

@@ -1,20 +1,22 @@
+/* Adjusts the width of containers and centers them */
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
+/* Centers text within elements */
 .center {
   text-align: center;
 }
 
+/* Styles for the header section */
 header {
   background-color: #FFBDE1;
   padding: 20px 0;
   font-family: 'KG Sweet N Sassy Regular', cursive; /* Set font */
-  
-
 }
 
+/* Styles for navigation menu */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -33,6 +35,8 @@ nav ul li a {
 nav ul li a:hover {
   color: #f39c12;
 }
+
+/* Styles for the footer section */
 footer {
   background-color: #FFBDE1;
   color: black;
@@ -64,26 +68,30 @@ footer {
   color: black;
 }
 
-
 .footer-right a:hover {
   color: #f39c12;
 }
+
+/* Body styles */
 body {
   background-image: url('../images/bgpattern.png');
   background-repeat: repeat; /* Ensure the background image repeats */
   background-size: 150px; /* Set the background size */
   font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to the body */
-  }
 }
 
-font-face {
+/* Font face for custom font */
+@font-face {
   font-family: 'KGSweetNSassy'; /* Name of the font */
   src: url('fonts/KGSweetNSassy.ttf') format('truetype'); /* Path to the font file */
 }
+
 /* Apply the custom font to headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'KGSweetNSassy', sans-serif; /* Apply the custom font to headings */
 }
+
+/* Styles for character images */
 .character {
   text-align: center; /* Center the content horizontally */
   margin: 10px auto; /* Center the container horizontally and add spacing */
@@ -103,7 +111,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; /* Center the caption text */
   margin-top: 5px; /* Add some space between the image and the caption */
 }
-/* Apply styles only to elements on the characters webpage */
+
+/* Specific styles for characters page */
 .characters-page .container {
   text-align: center;
 }
@@ -118,19 +127,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-top: 5px; /* Add some space between the image and the caption */
 }
-.character {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  vertical-align: top; /* Align images to the top of the container */
-}
 
-/* Add this CSS to adjust the layout */
+/* Additional body styles */
 body {
   margin: 0;
   padding: 0;
 }
 
+/* Styles for header and footer */
 header {
   padding-bottom: 20px;
 }
@@ -144,6 +148,7 @@ footer {
   padding: 20px;
 }
 
+/* Adjusts main content margin */
 main {
   margin-bottom: 80px; /* Adjust as needed to ensure space for the footer */
 }
@@ -153,12 +158,12 @@ body {
   font-size: 16px; /* Default font size */
 }
 
-/* Specific text size for the quiz page */
+/* Specific text size for quiz page */
 .quiz-text {
   font-size: 14px; /* Smaller font size for quiz content */
 }
 
-/* CSS */
+/* Styles for submit button */
 #submitQuiz {
   background-color: #ee60c5; /* Green background */
   border: none;
